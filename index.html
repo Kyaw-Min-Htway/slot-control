@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-800 flex items-center justify-center h-screen">
+    <div class="slot-machine bg-gray-700 text-white p-8 rounded-lg shadow-lg text-center">
+        <div class="reels flex justify-center mb-4">
+            <div class="reel w-16 h-16 bg-gray-900 border-2 border-white mx-2 flex items-center justify-center text-2xl rounded" id="reel1">-</div>
+            <div class="reel w-16 h-16 bg-gray-900 border-2 border-white mx-2 flex items-center justify-center text-2xl rounded" id="reel2">-</div>
+            <div class="reel w-16 h-16 bg-gray-900 border-2 border-white mx-2 flex items-center justify-center text-2xl rounded" id="reel3">-</div>
+        </div>
+        <div class="mb-4">
+            <input type="text" id="outcomeInput" placeholder="Enter outcome (e.g., Cherry,Cherry,Cherry)" class="w-full p-2 rounded-lg text-gray-900">
+        </div>
+        <button id="spinButton" class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 py-2 px-4 rounded-lg mb-2">Spin</button>
+        <p id="result" class="text-xl">Press "Spin" to play!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

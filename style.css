@@ -1,0 +1,17 @@
+@keyframes spin {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+.reel {
+    overflow: hidden;
+    position: relative;
+}
+
+.reel div {
+    animation: spin 1s ease-in-out infinite;
+}
+
+.spinning div {
+    animation: spin 1s ease-in-out infinite;
+}
